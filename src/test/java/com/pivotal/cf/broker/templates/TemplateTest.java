@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 
@@ -18,7 +18,7 @@ import com.pivotal.cf.broker.model.ServiceInstance;
 import freemarker.template.Configuration;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes={AppConfig.class})
+@SpringBootTest
 public class TemplateTest {
 
 	@Autowired
