@@ -55,7 +55,7 @@ public class ServiceDefinition {
 	
 	@JsonSerialize
 	@JsonProperty("plans")
-	@OneToMany(fetch=FetchType.EAGER)
+	@OneToMany(fetch=FetchType.LAZY:)
 	@JoinColumn(name="service_definition_id")
 	private List<Plan> plans = new ArrayList<Plan>();
 	
