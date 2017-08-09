@@ -48,7 +48,7 @@ public class PlanMetadata {
 	
 	@JsonSerialize
 	@JsonProperty("bullets")
-	@ElementCollection(fetch=FetchType.EAGER)
+	@ElementCollection(fetch=FetchType.LAZY)
 	@CollectionTable(
 	        name="plan_metadata_bullets",
 	        joinColumns=@JoinColumn(name="plan_id")

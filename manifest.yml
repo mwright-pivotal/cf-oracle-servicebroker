@@ -4,7 +4,7 @@ applications:
   memory: 512M
   instances: 1
   host: oraclexebroker
-  domain: northeast1.fe.gopivotal.com
+  domain: cf.wrightcode.net
   path: build/libs/oracle-service-broker-0.1.0.jar
   env:
      JAVA_OPTS : "-Duser.timezone=GMT"

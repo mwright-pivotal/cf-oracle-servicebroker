@@ -79,7 +79,7 @@ public class ServiceDefinition {
 	
 	@JsonSerialize
 	@JsonProperty("requires")
-	@ElementCollection(fetch=FetchType.EAGER)
+	@ElementCollection(fetch=FetchType.LAZY)
 	@CollectionTable(
 	        name="service_requires",
 	        joinColumns=@JoinColumn(name="sid")
